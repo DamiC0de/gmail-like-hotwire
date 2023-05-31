@@ -1,0 +1,5 @@
+<turbo-stream action="append" target="emails">
+  <%= turbo_frame_tag start: "email" do %>
+    <%= render(partial: "emails/email", locals: { email: @email }) %>
+  <% end %>
+</turbo-stream>

@@ -1,0 +1,13 @@
+
+<div id="<%= dom_id(email) %>">
+  <h2><%= email.subject %></h2>
+  <p><%= email.body %></p>
+
+<%= turbo_frame_tag dom_id(email) do %>
+  <%= form_with url: email_path(email), method: :delete, data: { confirm: "Are you sure?" } do |form| %>
+    <%= form.submit 'Delete Email' %>
+  <% end %>
+<% end %>
+
+
+</div>

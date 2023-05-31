@@ -29,6 +29,14 @@ gem "jbuilder"
 
 gem "devise"
 
+gem "faker"
+
+gem "hotwire-rails"
+
+gem "jquery-rails"
+
+gem "turbolinks"
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
